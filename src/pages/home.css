@@ -1,0 +1,112 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color:rgba(250, 244, 249, 0.3); 
+    padding: 10px;
+  }
+  
+  .header {
+    font-size:18px;
+    /* Add any other header styles you want */
+  }
+  .intro{
+    font-weight: 500;
+    font-family:sans-serif;
+  }
+  
+  .name {
+    font-family:sans-serif, poppins;
+    font-weight:12px;
+  }
+  .L, .B{
+    font-size:43px;
+
+  }
+  
+  .name2 {
+    font-style: italic;
+    color:rgba(41, 222, 228, 0.5) ;
+  }
+  nav{
+    padding-left:35%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight:500;
+    font-size:16px;
+    padding: 3%;
+    transition: transform 0.3s ease-in-out;
+  }
+  a{
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+   a :hover{
+    transform:scale(1.8);
+    color:maroon;
+    font-weight:600;
+
+
+  }
+  .footer{
+    
+  }
+
+  /* homepage.css (or your preferred CSS file) */
+
+/* Content div */
+/* Assuming you have a class named 'content' for your container */
+/* Assuming you have a class named 'content' for your container */
+.content {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(0, 0, 0, 1), transparent);
+}
+
+
+/* Style for the passage */
+.passage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px; /* Adjust as needed */
+  margin-left:30%;
+  color: rgb(216, 213, 213);
+  font-size: 16px;
+  z-index: 1; /* Ensure the passage is above the image */
+}
+
+/* Style for the image */
+.image img {
+  margin-left:27%;
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  z-index: 0; /* Behind the passage */
+  opacity:0.3;
+}
+.styled{
+  font-size:65px;
+  color: maroon;
+
+}
+.letter{
+  color: maroon;
+  font-size:20px;
+  font-weight:557 ;
+}
+

@@ -1,0 +1,36 @@
+/* Your existing CSS file (or create a new one) */
+.body{
+    background-color: rgba(0,0,0,0.5);
+}
+
+h1{
+    margin-left:43% ;
+    padding-top:10%;
+}
+.styled{
+    font-size:65px;
+    color: maroon;
+}
+
+.sidepiece {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+  }
+  
+  .image3,
+  .image4 {
+    flex: 1; /* Equal width for both images */
+    margin-right: 10px; /* Add some spacing between images */
+  }
+  
+  .image1{
+    position: center;
+    margin-left:10% ;
+  }
+  .image2{
+    margin-left:8%;
+  }
+  .image5{
+    margin-left: 23%;
+  }
+  
