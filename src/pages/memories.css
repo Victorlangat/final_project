@@ -1,36 +1,94 @@
-/* Your existing CSS file (or create a new one) */
-.body{
-    background-color: rgba(0,0,0,0.5);
+/* General Styles */
+body {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-    margin-left:43% ;
-    padding-top:10%;
-}
-.styled{
-    font-size:65px;
-    color: maroon;
+h1 {
+  text-align: center;
+  padding-top: 10%;
 }
 
+.styled {
+  font-size: 65px;
+  color: maroon;
+}
+
+/* Image Layout */
 .sidepiece {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
+  flex: 1 0 30%; /* Take up to 30% of the container, but can shrink */
+  max-width: 30%; 
+  margin: 10px;
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img,
+.image5 img {
+  width: 100%;
+  height: auto; /* Let the height adjust automatically based on the image's aspect ratio */
+  display: block; /* Prevent any extra space below the image */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .image1,
+  .image2,
   .image3,
-  .image4 {
-    flex: 1; /* Equal width for both images */
-    margin-right: 10px; /* Add some spacing between images */
+  .image4,
+  .image5 {
+      flex: 1 0 45%;
+      max-width: 45%;
+      height: 250px; /* Fixed height for smaller screens */
+      overflow: hidden;
   }
-  
-  .image1{
-    position: center;
-    margin-left:10% ;
+
+  .image1 img,
+  .image2 img,
+  .image3 img,
+  .image4 img,
+  .image5 img {
+      height: 100%;
+      object-fit: cover; 
   }
-  .image2{
-    margin-left:8%;
+}
+
+@media (max-width: 480px) {
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5 {
+      flex: 1 0 90%;
+      max-width: 90%;
+      height: 200px; 
+      overflow: hidden;
   }
-  .image5{
-    margin-left: 23%;
+
+  .image1 img,
+  .image2 img,
+  .image3 img,
+  .image4 img,
+  .image5 img {
+      height: 100%;
+      object-fit: cover; 
   }
-  
+
+  .styled {
+      font-size: 40px;
+  }
+}
