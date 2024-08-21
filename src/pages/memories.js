@@ -49,12 +49,15 @@ const Memories = () => {
 
 
       </div>
+      <div className="foot">
+        <Footer/>
+        </div>
 
       </div>
 
       
-      <div className="footer">
-        <Footer />
+      <div className="foot">
+        
       </div>
     </div>
   );

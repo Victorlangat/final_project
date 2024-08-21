@@ -30,13 +30,8 @@ body {
 .L,
 .B {
   font-size: 43px;
-}
 
-.name2 {
-  font-style: italic;
-  color: rgba(41, 222, 228, 0.5);
 }
-
 nav {
   /* Removed padding-left for better responsiveness */
   flex-grow: 1; /* Allow nav to take up available space */
@@ -72,7 +67,7 @@ a:hover {
 .content {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle, rgba(0, 0, 0, 1), transparent);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .passage {
@@ -84,15 +79,18 @@ a:hover {
   color: rgb(216, 213, 213);
   font-size: 16px;
   z-index: 1;
+  text-align: center; /* Center the text within the passage */
 }
 
 .image img {
-  width: 100%; /* Image takes full width on all screens */
+  width: 38%; /* Image takes full width on all screens */
   height: auto;
-  display: block;
-  object-fit: cover;
+  margin-left: 35%;
+  margin-bottom: 20%;
+  display: block; /* Ensure the image is displayed as a block element */
+  object-fit: contain; /* Maintain the image's aspect ratio and fit it within the container */
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 .styled {
@@ -120,8 +118,9 @@ a:hover {
       padding: 10px; /* Reduce padding on smaller screens */
   }
 
+  /* Remove the margin-left property from the image */
   .image img {
-      margin-left: 0; /* Remove left margin for image */
+      /* Remove the margin-left property from the image */
   }
 }
 
