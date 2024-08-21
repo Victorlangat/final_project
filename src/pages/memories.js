@@ -21,27 +21,27 @@ const Memories = () => {
         <h1><span className='styled'>A  </span>LIFE WELL LIVED</h1>
       </div>
       <div className='images'>
-        <div className='image1'>
+        <div className='image1 clickable-image'>
             <img src={photo1} alt="" />
 
         </div>
-        <div className='image2'>
+        <div className='image2 clickable-image'>
             <img src={photo2} alt="" />
 
         </div>
 
         <div className='sidepiece' >
-        <div className='image3'>
+        <div className='image3 clickable-image'>
             <img src={photo3} alt="" />
 
         </div>
-        <div className='image4'>
+        <div className='image4 clickable-image'>
             <img src={photo4} alt="" />
 
         </div>
 
         </div>
-        <div className='image5'>
+        <div className='image5 clickable-image'>
             <img src={photo5} alt="" />
 
         </div>

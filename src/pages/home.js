@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 import Navbar from '../components/navbar'; 
 import Footer from '../components/footer';
-import backdrop from '../pics/backdrop.png';
+import realbackdrop from '../pics/realbackdrop.png';
 
 
 const HomePage = () => {
@@ -24,11 +24,17 @@ const HomePage = () => {
         </p>
 
         <div className='image'>
-          <img src={backdrop} alt="pic" />
+          <img src={realbackdrop} alt="pic" />
 
         </div>
 
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
 
       </div>
       <div className='footer'>

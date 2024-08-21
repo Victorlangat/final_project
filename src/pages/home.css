@@ -30,8 +30,8 @@ body {
 .L,
 .B {
   font-size: 43px;
-
 }
+
 nav {
   /* Removed padding-left for better responsiveness */
   flex-grow: 1; /* Allow nav to take up available space */
@@ -83,9 +83,9 @@ a:hover {
 }
 
 .image img {
-  width: 38%; /* Image takes full width on all screens */
-  height: auto;
-  margin-left: 35%;
+  width: 100%; /* Image takes full width on all screens */
+  height:auto;
+  margin-left:;
   margin-bottom: 20%;
   display: block; /* Ensure the image is displayed as a block element */
   object-fit: contain; /* Maintain the image's aspect ratio and fit it within the container */
