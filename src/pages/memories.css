@@ -30,7 +30,7 @@ h1 {
 .image4,
 .image5 {
   flex: 1 0 30%; /* Take up to 30% of the container, but can shrink */
-  max-width: 30%; 
+  max-width: 30%;
   margin: 10px;
 }
 
@@ -63,7 +63,7 @@ h1 {
   .image4 img,
   .image5 img {
       height: 100%;
-      object-fit: cover; 
+      object-fit: cover;
   }
 }
 
@@ -75,7 +75,7 @@ h1 {
   .image5 {
       flex: 1 0 90%;
       max-width: 90%;
-      height: 200px; 
+      height: 200px;
       overflow: hidden;
   }
 
@@ -85,10 +85,33 @@ h1 {
   .image4 img,
   .image5 img {
       height: 100%;
-      object-fit: cover; 
+      object-fit: cover;
   }
 
   .styled {
       font-size: 40px;
   }
+}
+
+/* Additional CSS to achieve the desired layout and image enlargement */
+.image-pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image1, .image2 {
+  flex: 1 0 45%; /* Enlarge image1 and image2 */
+  max-width: 50%;
+  margin-left:30% ;
+}
+
+.image3, .image4 {
+  flex: 1 0 45%; /* Enlarge image3 and image4 */
+  max-width: 45%;
+}
+
+.image5 {
+  margin-top: 20px; /* Create a gap between the image pairs and the last image */
+  margin-left: 35%;
 }
