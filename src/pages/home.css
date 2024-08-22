@@ -9,7 +9,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  background-color: rgba(250, 244, 249, 0.3);
+  background-color:white;
   padding: 10px;
   position: relative; /* For positioning the nav on smaller screens */
 }
@@ -68,6 +68,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.7), transparent);
+  background-color:black ;
 }
 
 .passage {

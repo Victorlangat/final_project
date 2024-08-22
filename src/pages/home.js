@@ -9,7 +9,11 @@ const HomePage = () => {
   return (
     
     <div>
-      <Navbar/>
+      <div className='navbar'>
+        <Navbar/>
+
+      </div>
+      
 
       <div className='body'>
         

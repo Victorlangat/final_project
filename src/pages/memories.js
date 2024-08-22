@@ -15,7 +15,11 @@ const Memories = () => {
 
   return (
     <div>
-      <Navbar />
+      <div className='navbar'>
+        <Navbar/>
+
+      </div>
+  
       <div className='body'>
       <div className='text'>
         <h1><span className='styled'>A  </span>LIFE WELL LIVED</h1>
