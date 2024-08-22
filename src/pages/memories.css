@@ -87,7 +87,7 @@ h1 {
   .image4 img,
   .image5 img {
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
   }
 
   .styled {
